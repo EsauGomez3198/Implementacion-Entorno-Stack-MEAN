@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Autor } from '../models/autor.interface';
+import { AutorService } from '../services/autor-service.service';
 
 @Component({
   selector: 'app-listado-de-autores',
@@ -8,35 +10,15 @@ import { Component, OnInit } from '@angular/core';
 export class ListadoDeAutoresComponent implements OnInit {
 
   titulo:string='Administración de autores'
-
-  autores:any[]=[
-    {
-      id:1,
-      nombre:'Claudia Lars',
-      pais:'El Salvador',
-      genero:'Cuentos',
-      year:1930,
-      libros:[
-        {id:1,nombre:'Estrellas en el pozo',year:1950},
-        {id:2,nombre:'Cuentos de miedo',year:1960}
-      ]
-  },
-  {
-    id:2,
-    nombre:'Alfredo Espino',
-    pais:'El Salvador',
-    genero:'Cuentos',
-    year:1920,
-    libros:[
-      {id:1,nombre:'Cuentos de barro',year:1950}
-    ]
-}
-  ];
+  
+  autores:Autor[]=[];
 
 
-  constructor() { }
+  constructor(private servicio:AutorService) { }
 
   ngOnInit(): void {
+
+    this.autores=this.servicio.ListadoAutores();
   }
 
 }
