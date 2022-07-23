@@ -5,25 +5,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListadoDeAutoresComponent } from './listado-de-autores/listado-de-autores.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { AutorComponent } from './autor/autor.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { LibroComponent } from './libro/libro.component';
 import { FormularioComponent } from './formulario/formulario.component';
+import { AutorModule } from './autor/autor.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListadoDeAutoresComponent,
     NavBarComponent,
-    AutorComponent,
-    LibroComponent,
     FormularioComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AutorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
