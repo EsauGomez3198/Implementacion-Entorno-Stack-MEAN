@@ -7,13 +7,15 @@ import { ListadoDeAutoresComponent } from './listado-de-autores/listado-de-autor
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { AutorComponent } from './autor/autor.component';
 import { FormsModule } from '@angular/forms';
+import { LibroComponent } from './libro/libro.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListadoDeAutoresComponent,
     NavBarComponent,
-    AutorComponent
+    AutorComponent,
+    LibroComponent
   ],
   imports: [
     BrowserModule,

@@ -13,6 +13,7 @@ private autores:Autor[]=[
     pais:'El Salvador',
     genero:'Cuentos',
     year:1930,
+    foto:'https://www.biografiasyvidas.com/biografia/l/fotos/lars.jpg',
     libros:[
       {id:1,nombre:'Estrellas en el pozo',year:1960},
       {id:2,nombre:'Cuentos de miedo',year:1960}
@@ -24,6 +25,7 @@ private autores:Autor[]=[
   pais:'El Salvador',
   genero:'Cuentos',
   year:1920,
+  foto:'https://www.biografiasyvidas.com/biografia/e/fotos/espino.jpg',
   libros:[
     {id:1,nombre:'Cuentos de barro',year:1950}
   ]
@@ -34,6 +36,7 @@ private autores:Autor[]=[
   pais:'El Salvador',
   genero:'Poemas',
   year:1960,
+  foto:'https://www.biografiasyvidas.com/biografia/d/fotos/dalton_roque.jpg',
   libros:[
     {id:1,nombre:'Poemas del alma',year:1950}
   ]

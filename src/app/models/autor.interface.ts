@@ -7,6 +7,7 @@ export interface Autor{
     pais:string,
     genero:string,
     year:number,
+    foto:string,
     libros:Libro[]
 
 
