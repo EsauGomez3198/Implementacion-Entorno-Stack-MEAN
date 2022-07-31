@@ -9,7 +9,5 @@ export interface Autor{
     year:number,
     foto:string,
     libros:Libro[]
-
-
-
+    
 }
