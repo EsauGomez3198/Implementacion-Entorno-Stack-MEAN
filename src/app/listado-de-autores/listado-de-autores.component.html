@@ -16,7 +16,7 @@
       <tr *ngFor="let autor of autores" class="text-center"><!-- // inicia el for-->
         <th scope="row">{{ autor.id }}</th>
         <th scope="row">
-          <img width="50px" src="{{ autor.foto }}" alt="">
+          <a href="{{ autor.foto }}" target="_blank"><img width="50px" src="{{ autor.foto }}" alt=""></a>
         </th>
         <td>{{ autor.nombre | uppercase }}</td> <!--usando pipe uppercase-->
         <td>{{ autor.year }}</td>
