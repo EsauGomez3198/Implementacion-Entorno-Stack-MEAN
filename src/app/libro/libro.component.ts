@@ -7,7 +7,6 @@ import { Libro } from '../models/libro.interface';
   styleUrls: ['./libro.component.css']
 })
 export class LibroComponent implements OnInit {
-  foto='https://img.freepik.com/free-vector/abstract-elegant-winter-book-cover_23-2148798745.jpg?w=2000';
   
   @Input() libro!:Libro;
   
