@@ -9,7 +9,7 @@ import { AutorService } from '../services/autor-service.service';
 })
 export class ListadoDeAutoresComponent implements OnInit {
 
-  titulo:string='Administración de autores'
+  titulo:string='Listado de autores'
   
   autores:Autor[]=[];
 
