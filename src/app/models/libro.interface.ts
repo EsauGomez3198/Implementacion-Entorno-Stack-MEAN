@@ -2,6 +2,7 @@ export interface Libro{
 
     id:number,
     nombre:string,
-    year:number
+    year:number,
+    portada: string
     
 }
